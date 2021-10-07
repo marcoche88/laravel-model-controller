@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'ciao';
-});
+Route::get('/', 'MovieController@index')->name('home');
